@@ -20,3 +20,13 @@ Bundler 2.6.1 or compatible
         └── base_gemfile_locks.rb
     └── version_pinning_spec.rb
 ```
+
+### Setting up project
+
+1. Run `bundle install`;
+
+### Running tests
+
+```
+bundle exec rspec
+```
