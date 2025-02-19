@@ -33,7 +33,7 @@ bundle add 'version_pinning'
 
 ### Setting up project
 
-1. Run `bundle install`;
+1. Run `bundle install`
 
 ### Running tests
 
