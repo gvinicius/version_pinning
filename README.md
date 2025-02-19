@@ -4,8 +4,8 @@ A gem for pinning versions from Gemfile.lock to Gemfile.
 
 ### Prerequisites
 
-Ruby 3.2 or compatible
-Bundler 2.6.1 or compatible
+- Ruby 3.2
+- Bundler 2.6.1
 
 ### Installing this gem
 
