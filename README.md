@@ -4,8 +4,18 @@ A gem for pinning versions from Gemfile.lock to Gemfile.
 
 ### Prerequisites
 
-Ruby 3.2 or compatible
-Bundler 2.6.1 or compatible
+- Ruby 3.2
+- Bundler 2.6.1
+
+### Installing this gem
+
+```
+gem install 'version_pinning'
+```
+or
+```
+bundle add 'version_pinning'
+```
 
 ### Structure
 
@@ -19,4 +29,14 @@ Bundler 2.6.1 or compatible
     └── factories
         └── base_gemfile_locks.rb
     └── version_pinning_spec.rb
+```
+
+### Setting up project
+
+1. Run `bundle install`
+
+### Running tests
+
+```
+bundle exec rspec
 ```
