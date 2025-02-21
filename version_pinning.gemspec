@@ -9,7 +9,10 @@ Gem::Specification.new do |spec|
   spec.email = ["vlinsufba@gmail.com"]
 
   spec.summary = "This gem is designed to add Gemfile.lock versions back in the Gemfile"
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.description = "In order to avoid the Gemfile to be with undefined versions, which
+    may cause dependency issues in a project, this gems comes to add versions back in the
+    Gemfile. So that, there should be consistency in the expected versions for all gems
+    in a given project."
   spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
