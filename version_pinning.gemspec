@@ -8,11 +8,14 @@ Gem::Specification.new do |spec|
   spec.authors = ["Vinicius Lins Gesteira"]
   spec.email = ["vlinsufba@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "This gem is designed to add Gemfile.lock versions back in the Gemfile"
+  spec.description = "In order to avoid the Gemfile to be with undefined versions, which
+    may cause dependency issues in a project, this gems comes to add versions back in the
+    Gemfile. So that, there should be consistency in the expected versions for all gems
+    in a given project."
+  spec.homepage = "https://github.com/gvinicius/version_pinning"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1.0"
+  spec.required_ruby_version = "~> 3.2"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
@@ -35,7 +38,4 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
-
-  # For more information and examples about making a new gem, check out our
-  # guide at: https://bundler.io/guides/creating_gem.html
 end
