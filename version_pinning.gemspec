@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Vinicius Lins Gesteira"]
   spec.email = ["vlinsufba@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
+  spec.summary = "This gem is designed to add Gemfile.lock versions back in the Gemfile"
   spec.description = "TODO: Write a longer description or delete this line."
   spec.homepage = "TODO: Put your gem's website or public repo URL here."
   spec.license = "MIT"
