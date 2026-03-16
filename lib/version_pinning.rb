@@ -3,6 +3,7 @@
 require_relative "version_pinning/version"
 require_relative "version_pinning/lockfile_parser"
 require_relative "version_pinning/gemfile_pinner"
+require_relative "version_pinning/gem_info"
 
 module VersionPinning
   class Error < StandardError; end
