@@ -1,4 +1,26 @@
 module VersionPinning
   VERSION: String
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+  class Error < StandardError
+  end
+
+  def list_gems: () -> Hash[String, Array[Gem::Specification]]
+
+  def self.pin: (?gemfile_path: String, ?lockfile_path: String) -> String
+
+  module LockfileParser
+    GEM_SECTION_HEADER: String
+    SPECS_HEADER: String
+    GEM_LINE_PATTERN: Regexp
+
+    def self.parse: (String lockfile_path) -> Hash[String, String]
+    def self.extract_gem_versions: (String content) -> Hash[String, String]
+  end
+
+  module GemfilePinner
+    GEM_DECLARATION_PATTERN: Regexp
+
+    def self.pin: (String gemfile_path, Hash[String, String] locked_versions) -> String
+    def self.pin_versions: (String content, Hash[String, String] locked_versions) -> String
+  end
 end
